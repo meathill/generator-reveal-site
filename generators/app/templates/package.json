@@ -1,0 +1,25 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "scripts": {
+    "start": "live-server --port=8001 --host=localhost --ignore=.git,node_modules"
+  },
+  "author": {
+    "name": "Meathill",
+    "email": "meathill@gmail.com",
+    "url": "https://meathill.com/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "for": "the sample code"
+    },
+    {
+      "type": "CC4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "for": "the slide"
+    }
+  ]
+}
