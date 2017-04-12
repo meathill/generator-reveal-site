@@ -1,8 +1,3 @@
-/**
- * Created by Meathill on 2017/4/6.
- */
-"use strict";
-
 const fs = require('fs');
 const gulp = require('gulp');
 const del = require('del');

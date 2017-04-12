@@ -7,6 +7,12 @@ const mkdirp = require('mkdirp');
 
 class RevealSiteGenerator extends Generator {
 
+  constructor(args, options) {
+    super(args, options);
+
+    this.config.save();
+  }
+
   prompting() {
     return this.prompt([
       {
@@ -33,7 +39,14 @@ class RevealSiteGenerator extends Generator {
   }
 
   writing() {
-    ['package.json', 'index.dev.html', 'gulpfile.js', 'content.md', 'app/main.js'].forEach( filename => {
+    [
+      'package.json',
+      'index.dev.html',
+      'gulpfile.js',
+      'content.md',
+      'app/main.js',
+      '.gitignore'
+    ].forEach( filename => {
       this.fs.copyTpl(
         this.templatePath(filename),
         this.destinationPath(filename),

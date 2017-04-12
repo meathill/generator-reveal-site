@@ -1,7 +1,3 @@
-/**
- * Created by realm on 2017/4/6.
- */
-
 Reveal.initialize({
   history: true,
   dependencies: [
