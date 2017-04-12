@@ -3,13 +3,9 @@
  */
 
 const Generator = require('yeoman-generator');
+const mkdirp = require('mkdirp');
 
 class RevealSiteGenerator extends Generator {
-  constructor(args, options) {
-    super(args, options);
-
-    this.option('babel');
-  }
 
   prompting() {
     return this.prompt([
@@ -28,7 +24,7 @@ class RevealSiteGenerator extends Generator {
         type: 'input',
         name: 'version',
         message: 'What\'s the basic version?',
-        default: '0.0.1'
+        default: '0.1.0'
       }
     ])
       .then( answers => {
@@ -44,6 +40,8 @@ class RevealSiteGenerator extends Generator {
         this.props
       );
     });
+    let base = this.destinationPath('css/');
+    mkdirp.sync(base);
   }
 
   installing() {
@@ -59,7 +57,10 @@ class RevealSiteGenerator extends Generator {
       'highlight.js',
       'marked',
       'reveal.js',
-      'run-sequence'], { 'save-dev': true});
+      'run-sequence',
+      'meathill-reveal-theme',
+      'meathill-reveal-markdown-compiler'
+    ], { 'save-dev': true});
   }
 }
 module.exports = RevealSiteGenerator;
