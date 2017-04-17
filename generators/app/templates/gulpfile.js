@@ -7,7 +7,7 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const stylus = require('gulp-stylus');
 const clean = require('gulp-clean-css');
-const {compiler, toCDN} = require('meathill-reveal-markdown-compiler');
+const {compiler, toCDN} = require('reveal-markdown-compiler');
 const DOC = 'docs/';
 
 gulp.task('clear', () => {
