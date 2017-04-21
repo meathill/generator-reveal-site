@@ -53,8 +53,9 @@ class RevealSiteGenerator extends Generator {
         this.props
       );
     });
-    let base = this.destinationPath('css/');
-    mkdirp.sync(base);
+    let base = this.destinationPath();
+    mkdirp.sync(base + 'css/');
+    mkdirp.sync(base + 'styl/');
   }
 
   installing() {
