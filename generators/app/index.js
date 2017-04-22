@@ -73,7 +73,7 @@ class RevealSiteGenerator extends Generator {
       'reveal.js',
       'run-sequence',
       'meathill-reveal-theme',
-      'meathill-reveal-markdown-compiler'
+      'reveal-markdown-compiler'
     ], { 'save-dev': true});
   }
 }
