@@ -2,6 +2,7 @@
  * Created by realm on 2017/4/5.
  */
 
+const gitRemoteOriginUrl = require('git-remote-origin-url');
 const Generator = require('yeoman-generator');
 const mkdirp = require('mkdirp');
 
@@ -36,6 +37,12 @@ class RevealSiteGenerator extends Generator {
       .then( answers => {
         this.props = answers;
       })
+      .then( () => {
+        return gitRemoteOriginUrl();
+      })
+      .then( url => {
+        this.props.git = url;
+      });
   }
 
   writing() {
@@ -45,7 +52,8 @@ class RevealSiteGenerator extends Generator {
       'gulpfile.js',
       'content.md',
       'app/main.js',
-      '.gitignore'
+      '.gitignore',
+      'README.md'
     ].forEach( filename => {
       this.fs.copyTpl(
         this.templatePath(filename),
@@ -54,8 +62,8 @@ class RevealSiteGenerator extends Generator {
       );
     });
     let base = this.destinationPath();
-    mkdirp.sync(base + 'css/');
-    mkdirp.sync(base + 'styl/');
+    mkdirp.sync(base + '/css/');
+    mkdirp.sync(base + '/styl/');
   }
 
   installing() {

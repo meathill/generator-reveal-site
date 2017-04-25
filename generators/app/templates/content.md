@@ -14,6 +14,12 @@ description: <%= description %>
 
 <!-- page -->
 
+## 教学目标
+
+1. 
+
+<!-- page -->
+
 ## 课程大纲
 
 1. 
