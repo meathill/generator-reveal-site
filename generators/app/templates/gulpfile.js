@@ -1,4 +1,3 @@
-const fs = require('fs');
 const gulp = require('gulp');
 const del = require('del');
 const sequence = require('run-sequence');
@@ -25,9 +24,11 @@ gulp.task('js', () => {
 gulp.task('stylus', () => {
   return gulp.src('styl/screen.styl')
     .pipe(stylus({
-      compress: true
+      'include css': true
     }))
-    .pipe(clean())
+    .pipe(clean({
+      level: 2
+    }))
     .pipe(gulp.dest(`${DOC}css/`));
 });
 
