@@ -1,6 +1,6 @@
 {
   "name": "generator-reveal-site",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a yeoman generator for reveal, focused on Chinese coding tech slide, building a site with github pages",
   "main": "app/index.js",
   "scripts": {

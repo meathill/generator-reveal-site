@@ -67,22 +67,7 @@ class RevealSiteGenerator extends Generator {
   }
 
   installing() {
-    this.npmInstall([
-      'del',
-      'font-awesome',
-      'gulp',
-      'gulp-clean-css',
-      'gulp-rename',
-      'gulp-replace',
-      'gulp-stylus',
-      'gulp-uglify',
-      'highlight.js',
-      'marked',
-      'reveal.js',
-      'run-sequence',
-      'meathill-reveal-theme',
-      'reveal-markdown-compiler'
-    ], { 'save-dev': true});
+    this.npmInstall();
   }
 }
 module.exports = RevealSiteGenerator;

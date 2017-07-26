@@ -21,5 +21,5 @@
 
 代码部分采用 [MIT](https://opensource.org/licenses/MIT) 进行许可。
 
-[![知识共享许可协议](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
-Slide 和文档部分采用 [CC4.0](http://creativecommons.org/licenses/by/4.0/) 进行许可
+[![知识共享署名-非商业性使用许可协议](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
+Slide 和文档部分采用 [知识共享署名-非商业性使用](http://creativecommons.org/licenses/by-nc/4.0/) 进行许可。
