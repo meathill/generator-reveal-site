@@ -3,7 +3,7 @@
   "version": "<%= version %>",
   "description": "<%= description %>",
   "scripts": {
-    "start": "live-server --port=8001 --host=localhost --ignore=.git,node_modules",
+    "start": "node live-server.js",
     "watch:stylus": "mkdir css & stylus -m -w styl/screen.styl -o css/",
     "webpack": "webpack"
   },
@@ -29,6 +29,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
+    "live-server": "^1.2.0",
     "marked": "^0.3.6",
     "reveal-markdown-compiler": "^1.2.0",
     "run-sequence": "^1.2.2",
