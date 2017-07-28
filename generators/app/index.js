@@ -52,8 +52,14 @@ class RevealSiteGenerator extends Generator {
       'gulpfile.js',
       'content.md',
       'app/main.js',
+      'app/helper.js',
+      'js/main.js',
+      '.babelrc',
       '.gitignore',
-      'README.md'
+      'README.md',
+      'LICENSE',
+      'webpack.config.js',
+      'webpack.config.prod.js'
     ].forEach( filename => {
       this.fs.copyTpl(
         this.templatePath(filename),
