@@ -22,7 +22,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "marked": "^0.4.0",
+    "marked": "^1.1.1",
     "reveal-markdown-compiler": "^2.2.2",
     "webpack": "^4.16.4"
   },
